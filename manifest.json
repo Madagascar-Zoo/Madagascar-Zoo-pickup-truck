@@ -1,0 +1,32 @@
+{
+  "name": "Madagascar Zoo Pickup Truck",
+  "version": "0.1",
+  "manifest_version": 3,
+  "description": "Text, Image, Link Temporary Storage",
+  "action": {
+    "default_popup": "popup/main.html"
+  },
+  "background": {
+    "service_worker": "script/background.js"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "commands": {
+    "run-foo": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Run \"foo\" on the current page."
+    },
+    "_execute_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y",
+        "chromeos": "Ctrl+Shift+U",
+        "linux": "Ctrl+Shift+J"
+      }
+    }
+  }
+}
